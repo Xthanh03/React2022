@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinhDiemDH</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="fname">Your name:</label><br>
+        <input type="text" id="fnam" name="fname" placeholder="John" required onkeyup="promtName(this)"><br>
+        <label for="fname">Math:</label><br>
+        <input type="number" id="math" name="math" placeholder="6.5" min="0" max="10" required
+            onkeyup="promtMath(this)"><br>
+        <label for="fname">Literature:</label><br>
+        <input type="number" id="literature" name="literature" placeholder="6.5" min="0" max="10" required
+            onkeyup="promtLiterature(this)"><br>
+        <label for="fname">English:</label><br>
+        <input type="number" id="english" name="english" placeholder="6.5" min="0" max="10" required
+            onkeyup="promtEnglish(this)"><br>
+
+        <label for="region">Region:</label>
+        <select name="region" id="region">
+            <option value="0.75">KV1</option>
+            <option value="0.5">KV2 NT</option>
+            <option value="0.25">KV2</option>
+            <option value="0">KV3</option>
+        </select>
+        <input type="submit" value="calulate" onclick="cal(event)">
+        <br><br>
+        <div id="result">Tong diem: 0</div>
+    </form>
+
+    <script>
+        var fname, math, literature, english, region = 0.75;
+
+        function promtName(obj) {
+            fname = obj.value;
+        }
+
+        function promtMath(obj) {
+            math = parseFloat(obj.value);
+        }
+
+        function promtLiterature(obj) {
+            literature = parseFloat(obj.value);
+        }
+
+        function promtEnglish(obj) {
+            english = parseFloat(obj.value);
+        }
+        let regionDropdown = document.getElementById("region");
+        regionDropdown.addEventListener('change', function () {
+            region = parseFloat(this.value);
+        })
+
+        function cal(e) {
+            e.preventDefault();
+            let total = math + literature + english + region;
+            document.getElementById('result').innerText = "Tong diem: " + total;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dem mang</title>
+</head>
+
+<body>
+    <script>
+        function countString(sub, str) {
+            let count = 0;
+            for (let i = 0; i < str.length; ++i) {
+                //Cắt chuỗi con từ chuỗi ban đầu có cùng độ dài với ký tự chỉ định.
+                //Sau đó so sánh chuỗi con này với ký tự chỉ định để đếm số lần xuất hiện
+                if (str.substring(i, i + sub.length) == sub) {
+                    count += 1;
+                }
+                return count;
+
+            }
+
+        }
+
+        let str = "I love you and our son";
+        let sub = "ou";
+
+        let result = countString(sub, str);
+        console.log(result)
+
+
+
+    </script>
+</body>
+
+</html>
