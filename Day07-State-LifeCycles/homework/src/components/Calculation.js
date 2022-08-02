@@ -5,7 +5,7 @@ import Buttons from './Buton';
 import Result from './Result';
 import "./calc.css";
 /**this is the main class */
-class App extends Component {
+class Calculation extends Component {
 
     constructor(props) {
         super(props);
@@ -83,4 +83,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default Calculation;
