@@ -8,7 +8,7 @@ import Selector from './components/Selector';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
-root.render(<Selector />);
+root.render(<App />);
 
 
 

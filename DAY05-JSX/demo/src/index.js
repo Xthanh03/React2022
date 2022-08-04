@@ -26,4 +26,4 @@ import Hello from './components/Hello';
 // JSX + React 18
 const container = document.getElementById('root');
 const root = createRoot(container);
-root.render(<Hello />);
+root.render(<App />);
