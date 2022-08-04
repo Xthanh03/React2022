@@ -26,7 +26,7 @@ function Home() {
 
     return (
         <div style={{ margin: '5rem' }}>
-            <h1>List Account</h1>
+            <h2>List Account</h2>
             <Table striped bordered hover size="sm">
                 <thead>
                     <tr>

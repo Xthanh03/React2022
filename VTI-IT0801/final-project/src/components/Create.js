@@ -27,11 +27,11 @@ function Create() {
 
     return (
         <div >
-            <h1>ADD ACCOUNT</h1>
+            <h2>Add Account</h2>
             <Form className="d-grid gap-2" style={{ margin: '5rem' }}>{ }
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Control onChange={e => setemail(e.target.value)}
-                        type="text"
+                        type="email"
                         placeholder="Enter Email" required />
                 </Form.Group>
 

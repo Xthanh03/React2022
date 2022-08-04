@@ -1,11 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 import { createRoot } from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Hello from './components/Hello';
+
 
 // React Elements 
 // const name = "Your name";
@@ -26,4 +25,4 @@ import Hello from './components/Hello';
 // JSX + React 18
 const container = document.getElementById('root');
 const root = createRoot(container);
-root.render(<App />);
+root.render(<Hello />);
